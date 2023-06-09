@@ -6,12 +6,26 @@ export const styles = StyleSheet.create({
         flex: 1,
         padding: 24,
     },
-    title: {
+    title1: {
         color: "#4EA8DE",
-        textAlign: "center",
-        marginTop: 10,
         fontSize: 36,
         fontWeight: "bold"
+    },
+    title2: {
+        color: "#5e60ce",
+        fontSize: 36,
+        fontWeight: "bold"
+    },
+    tinyLogo:{
+        marginTop: 10,
+        marginRight: 10,
+        alignContent: "center"
+    },
+    titleArea: {
+        marginTop: 10,
+        flexDirection: "row",
+        alignSelf: "center",
+        alignItems: "center",
     },
     form:{
         marginTop: 36,
@@ -25,17 +39,16 @@ export const styles = StyleSheet.create({
         backgroundColor: "#333333",
         borderRadius: 4,
         marginRight: 6,
+        color: "#F2F2F2",
+        padding: 10,
     },
     addButton: {
-        width: 56,
-        height: 56,
-        borderRadius: 5,
+        width: 52,
+        height: 52,
+        borderRadius: 6,
         backgroundColor: "#4EA8DE",
         alignItems: "center",
         justifyContent: "center",
-    },
-    addButtonText: {
-
     },
     taskArea: {
         backgroundColor: "#1A1A1A",
@@ -45,7 +58,7 @@ export const styles = StyleSheet.create({
     taskCounterArea: {
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
     },
     taskBanner: {
         flexDirection: "row",
@@ -76,6 +89,16 @@ export const styles = StyleSheet.create({
         marginTop: 15,
         borderBottomColor: '#808080',
         borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    listEmptyImage: {
+        marginTop: 30,
+        marginBottom: 10,
+        alignContent: "center",
+        alignSelf: "center"
+    },
+    listEmptyText: {
+        textAlign: "center",
+        fontSize: 14,
+        color: "#808080"
     }
-
 })
