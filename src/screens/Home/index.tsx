@@ -21,7 +21,18 @@ export function Home(){
         ]
         setTasks(addNewTask)
         setTaskName("")
-        console.log(tasks.filter(teste => teste.done == true))
+    }
+    function handleTaskRemove(id:string){
+        setTasks(prevState => prevState.filter(task => task.id !== id))
+    }
+    function handleTaskDone(taskProp: taskType){
+        if(taskProp.done == false){
+            taskProp.done = true
+        }else taskProp.done = false
+        const updatedObject = tasks.map((task) =>
+            task.id === taskProp.id ? taskProp : task
+        );
+        setTasks(updatedObject)
     }
     return(
         <View style={styles.container}>
@@ -54,7 +65,7 @@ export function Home(){
                     data={tasks}
                     keyExtractor={item => item.id}
                     renderItem={({item}) => (
-                        <Task key={item.id} name={item.name} id={item.id} done={item.done}/>
+                        <Task key={item.id} name={item.name} id={item.id} done={item.done} onRemove={() => handleTaskRemove(item.id)} onConclude={() => handleTaskDone(item)}/>
                     )}
                     ListEmptyComponent={() => (
                         <View>

@@ -36,11 +36,12 @@ export const styles = StyleSheet.create({
     input:{
         flex: 1,
         height: 56,
-        backgroundColor: "#333333",
+        backgroundColor: "#262626",
         borderRadius: 4,
         marginRight: 6,
-        color: "#F2F2F2",
+        color: "#808080",
         padding: 10,
+        fontSize: 16,
     },
     addButton: {
         width: 52,

@@ -5,19 +5,30 @@ export const styles = StyleSheet.create({
         width: "100%",
         backgroundColor: "#333333",
         borderRadius: 3,
-        borderColor: "white",
-        borderWidth: 0.2,
+        borderColor: "#F2F2F2",
+        borderWidth: 0.1,
         alignItems: "center",
+        marginBottom: 10,
         
     },
     taskText: {
-        color: "white",
+        color: "#F2F2F2",
         fontSize: 14,
         textAlign: "center",
         textAlignVertical: "center",
         flexWrap: "wrap",
         height: "100%",
-        width: "86%"
+        width: "86%",
+    },
+    taskTextDone: {
+        color: "#808080",
+        fontSize: 14,
+        textAlign: "center",
+        textAlignVertical: "center",
+        flexWrap: "wrap",
+        height: "100%",
+        width: "86%",
+        textDecorationLine: "line-through"
     },
     removeTaskButtonImage: {
         borderRadius: 4,
